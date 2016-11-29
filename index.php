@@ -6,9 +6,9 @@
 	// I'll improve code comments #son
 	error_reporting(E_ERROR | E_WARNING | E_PARSE);
 
-	if ($_GET['action'] || $_GET['UUID']) {
+	if ($_GET['action']) {
 		require('enclave.php');
 	} else {
-		header('Location: apidocs.html');
+		die("Enclave API Endpoint");
 	}
 ?>
