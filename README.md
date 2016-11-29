@@ -1,14 +1,16 @@
 # Enclave Messenger API
-Currently being rewritten from the Orthros codebase.
+Currently being rewritten from the older RSA-based Orthros codebase. If you find a security issue please report it in the GitHub issues section, if it is more severe and requires confidentiality please email dylan@suntzusecurity.com to exchange PGP keys.
 
+Under MIT Licensing 
+**Please see provided LICENSE file in source for license info**
 
 ## Common
 All functions will return the same basic formatted response, returned "error" 0 is a successful execution, 1 is unsuccessful;
 ```json
 {
-    "result": "some good or bad result", // some result response
-    "called": "some_action_name", // called enclave PHP function (for backend debugging)
-    "error": 0 // if execution was OK
+    "result": "some good or bad result", 
+    "called": "some_action_name", 
+    "error": 0 
 }
 ```
 
