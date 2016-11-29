@@ -242,6 +242,7 @@ Response;
   "result": "message deleted!",
   "called": "user_delete_message",
   "error": 0
-}```
+}
+```
 
 ---
